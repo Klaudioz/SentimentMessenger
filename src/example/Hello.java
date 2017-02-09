@@ -39,7 +39,7 @@ public class Hello implements RequestHandler<RequestClass, ResponseClass> {
 		double sentiment = 0;
 		String theResponse = "";
 		
-		AWSCredentials creds = new BasicAWSCredentials("AKIAJWHDLGQPUCZXF22Q","RDkDqLW6tnieSoSmLm2Bowg+XruTlUxlaIsuhGar");
+		AWSCredentials creds = new BasicAWSCredentials("XXXXXXXXXXXXXX","XXXXXXXXXXXXXXXXXXX"); //PUT YOUR OWN CREDENTIALS
 		AmazonS3Client s3Client = new AmazonS3Client(creds);
 		Region usWest2 = Region.getRegion(Regions.US_WEST_2);
         s3Client.setRegion(usWest2);
